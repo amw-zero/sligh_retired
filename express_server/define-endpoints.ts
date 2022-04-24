@@ -4,8 +4,6 @@ interface CreateRecurringTransaction { amount: number;name: string }
 
 interface ScheduledTransaction { name: string }
 
-interface Filter { ids: number[] }
-
 function expand(rt: RecurringTransaction) {
   return { name: rt.name };
 
